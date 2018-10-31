@@ -28,10 +28,7 @@
         <activity
             android:name=".NewUserActivity"
             android:label="@string/title_activity_new_user" />
-        <activity
-            android:name=".TypeActivity"
-            android:label="@string/title_activity_type"
-            android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>
