@@ -1,25 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <android.support.design.widget.CoordinatorLayout
-        android:id="@+id/coordinatorLayout"
+    <ListView
+        android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" />
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fab"
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_colorNormal="@color/colorAccent"
+        fab:menu_colorPressed="@color/colorAccent"
+        fab:menu_fab_label=""
+        fab:menu_icon="@drawable/ic_action_plus"
+        fab:menu_labels_colorNormal="@color/colorSecondaryDark"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_openDirection="up">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item_visual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_margin="30dp"
-            android:src="@drawable/ic_action_plus"
-            app:fabSize="normal" />
+            android:src="@drawable/ic_action_photo"
+            fab:fab_label="Visual"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="@color/colorSecondary"
+            fab:fab_colorPressed="@color/colorSecondary"/>
 
-    </android.support.design.widget.CoordinatorLayout>
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item_timed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_timer"
+            fab:fab_label="Timed"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="@color/colorSecondary"
+            fab:fab_colorPressed="@color/colorSecondary"/>
 
-</android.support.constraint.ConstraintLayout>
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_text"
+            fab:fab_label="Note"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="@color/colorSecondary"
+            fab:fab_colorPressed="@color/colorSecondary"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_list"
+            fab:fab_label="List"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="@color/colorSecondary"
+            fab:fab_colorPressed="@color/colorSecondary"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</FrameLayout>
