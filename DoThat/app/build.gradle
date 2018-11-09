@@ -32,6 +32,11 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.github.clans:fab:1.6.4'
-
     implementation 'com.jcminarro:RoundKornerLayouts:0.3.1'
+//    compile 'com.wdullaer:materialdatetimepicker:4.0.1'
+//    compile 'com.android.support:recyclerview-v7:27.1.1'
+//    implementation 'com.getbase:floatingactionbutton:1.10.1'
+//    implementation 'com.bignerdranch.android:recyclerview-multiselect:+'
+//    implementation 'com.wrapp.floatlabelededittext:library:0.0.6'
+//    compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
 }
